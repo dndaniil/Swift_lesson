@@ -37,7 +37,7 @@
 //&& - и 
 //! - отрицает все
 
-
+//----------------------------------------------------------------------------
 
 //Операторы if else
 //let age = 25
@@ -71,12 +71,13 @@
 
 
 //nil - остутсвие значения
-/* Чтобы сложить абциональное выражение с не абциональным, то нужно распокавать b и c */
-//let a: Int = 1 /*- не абциональное выражение*/
-//let b: Int? = 1 /*- абциональное выражение*/
-//let c: Int? = nil /*- не абциональное выражение*/
+//опциональные типы могут иметь значение, а могут не иметь
+/* Чтобы сложить опциональное выражение с не обциональным, то нужно распокавать b и c */
+//let a: Int = 1 /*- не опциональное выражение*/
+//let b: Int? = 1 /*- опциональное выражение*/
+//let c: Int? = nil /*- не опциональное выражение*/
 //
-/////*Складываем абциональное значение с обычным*/
+/////*Складываем опциональное значение с обычным*/
 /////БЕЗОПАСНАЯ ПРОВЕРКА
 //if let b {
 //    print(a + b)
@@ -96,3 +97,50 @@
 //let c: Int? = nil
 //
 //print(a + b!)
+
+
+//Операторы Any и as
+//let a: Any = 1
+//let b: Any = 2
+//let result = (a as! Int) + (b as! Int)
+//print(result)
+
+//---------------------------------------------------------------------------
+
+//Функции
+//вместо numberPow можно поставить _ и тогда в let ничего не нужно будет писать
+//func pow(numberPow num: Int) -> Int {
+//    return num * num * num
+//}
+//
+//let a = pow(numberPow: 1)
+//let b = pow(numberPow: 2)
+//let c = pow(numberPow: 3)
+//print(a, b, c)
+//
+//можно с разными типами
+
+//func pow(firstNumber num1: Int, secondNumber num2: Double, lastNumber num3: Float) -> String {
+//    return String(num1 + Int(num2) + Int(num3))
+//}
+//let a = pow(firstNumber: 1, secondNumber: 1.2, lastNumber: 2.8)
+//print(a)
+
+//Если ничего не хочу возвращать Void
+//
+//func pow(firstNumber num1: Int, secondNumber num2: Double, lastNumber num3: Float) -> Void {
+//    let result = String(num1 + Int(num2) + Int(num3))
+//    print(result)
+//}
+//pow(firstNumber: 1, secondNumber: 2, lastNumber: 3)
+//Пример функции с именем
+//func getFullUserName() -> String {
+//    print("Введите ваше имя: ")
+//    let name = readLine() ?? ""
+//    print("Введите вашу фамилию: ")
+//    let surname = readLine() ?? ""
+//    print("Ваше имя и фамилия: ")
+//    return name + " " + surname
+//}
+//let userFullName = getFullUserName()
+//print(userFullName)

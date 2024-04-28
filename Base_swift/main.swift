@@ -100,6 +100,7 @@
 
 
 //Операторы Any и as
+//any - любое значение
 //let a: Any = 1
 //let b: Any = 2
 //let result = (a as! Int) + (b as! Int)
@@ -117,7 +118,7 @@
 //let b = pow(numberPow: 2)
 //let c = pow(numberPow: 3)
 //print(a, b, c)
-//
+
 //можно с разными типами
 
 //func pow(firstNumber num1: Int, secondNumber num2: Double, lastNumber num3: Float) -> String {
@@ -144,3 +145,83 @@
 //}
 //let userFullName = getFullUserName()
 //print(userFullName)
+
+//Свойства
+//count - считает символы
+//isZero - если число = 0, то true
+//max - максимальное значение
+//let a = "привет"
+//let b = 2.1
+//print(a.count)
+//print(b.isZero)
+//print(Int.max)
+
+//---------------------------------------------------------------
+
+//Массивы
+//
+//let age = 25
+//let name = "Oleg"
+//let salary = [1, 2, 3, 4]
+//let nameChildren = ["Nastya", "Oleg"]
+//
+//let salarys: Array<Int> = [1, 2, 3, 4]
+//
+//let b: Array<Any> = [1, 2, 3, "ergh"]
+//print(b)
+//
+//let name: [String] = ["kdkdk", "fejkfj", "rjkrjke"]
+//
+//получение данных из массива
+//
+//let a = [1, 2, 3, 4]
+//print(a[0], a[3])
+//
+//изменение в массиве
+//var b = [1, 2, 3, 4, 5]
+//b[1] = -99
+//print(b)
+//
+//добавление в массив
+//var b = [1, 2, 3, 4, 5]
+//b.append(2)
+//print(b)
+//
+//добавление в массив с определенным индексом
+//var b = [1, 2, 3, 4, 5]
+//b.insert(99, at: 2)
+//print(b)
+//
+//удаление массива
+//var b = [1, 2, 3, 4, 5]
+//b.remove(at: 1)
+//print(b)
+
+
+//---------------------------------------------
+//Цикл for
+//let a = [1, 2, 3, 4, 5, 6]
+//for element in a {
+//    print(element)
+//}
+
+//for element in 1...5 {
+//    print("привет")
+//}
+
+//чтобы элементы выводились с определенным шагом используем метод stride
+
+//for element in stride(from: 0, to: 13, by:2) {
+//    print("hi" + String(element))
+//}
+
+//break - ранний выход из цикла
+
+//var index = 0
+//while index < 10 {
+//    print("Текущий индекс " + String(index))
+//    index += 1
+//    if index > 3 {
+//        break
+//    }
+//}

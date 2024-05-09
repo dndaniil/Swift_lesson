@@ -118,7 +118,7 @@
 //let b = pow(numberPow: 2)
 //let c = pow(numberPow: 3)
 //print(a, b, c)
-
+//
 //можно с разными типами
 
 //func pow(firstNumber num1: Int, secondNumber num2: Double, lastNumber num3: Float) -> String {
@@ -143,8 +143,8 @@
 //    print("Ваше имя и фамилия: ")
 //    return name + " " + surname
 //}
-//let userFullName = getFullUserName()
-//print(userFullName)
+//let fullUserName = getFullUserName()
+//print(fullUserName)
 
 //Свойства
 //count - считает символы
@@ -225,3 +225,27 @@
 //        break
 //    }
 //}
+
+//guard
+
+//func division(_ a: Int, _ b: Int) -> Int? {
+//    guard b != 0 else { return nil }
+//    return a / b
+//}
+
+//for index in 1..<10 {
+//    guard index < 5 else { break }
+//    print(index)
+//}
+
+
+//Кортежи
+//
+//let a: (Int, Int, String) = (1, 2, "jkfe")
+//
+//let a = (1, 3, "privet", 4)
+//print(a.0)
+//print(a.2)
+//
+//let person = (name: "Ivan", surname: "DSsdas", age: 19, height: 188)
+//print(person.age, person.name)

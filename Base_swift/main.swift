@@ -263,14 +263,14 @@
 
 //Cловари
 //
-//let playerseight: [(name: String, height: Int)] = [
+//let playerheight: [(name: String, height: Int)] = [
 //    (name: "Ivan", height: 187),
 //    (name: "Petya", height: 197),
 //    (name: "Max", height: 18),
 //    (name: "Dan", height: 1087)
 //]
 //переберем массив
-//for player in playerseight {
+//for player in playerheight {
 //    if player.name == "Max" {
 //        print(player.height)
 //        break
@@ -306,3 +306,29 @@
 //    print(player.key, player.value)
 //}
 //key - перебирает ключи, value - перебирает значения
+
+//Множества
+//
+//let hr: Set = ["Иван", "Мария", "Светлана"]
+//let inOfficeDayOne: Set = ["Ivan", "Maria"]
+//var inOfficeDayTwo: Set = ["Кузьма", "Никита", "Максим"]
+//let r = inOfficeDayTwo.contains("Максим")
+//print(r)
+//
+////добавление во множество
+////inOfficeDayTwo.insert("Петр")
+//print(inOfficeDayTwo)
+//
+//Множества могут быть заполненными,пустыми и опциональными
+//
+//let a: Set = ["Иван", "Мария", "Светлана"]
+//let b: Set<String> = []
+//let c: Set<String>?
+
+//Переборка множества
+//
+//let hr: Set = ["Иван", "Мария", "Светлана"]
+//
+//for people in hr {
+//    print(people)
+//}
